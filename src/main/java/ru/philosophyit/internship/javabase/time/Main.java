@@ -1,16 +1,15 @@
 package ru.philosophyit.internship.javabase.time;
 
-import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 class ConsoleCalendar{
-    private static List<String> calendar_matrix = new ArrayList<>();
+    private static final List<String> calendar_matrix = new ArrayList<>();
     private void createCalendar(){
         Calendar cal = new GregorianCalendar();
         int today = cal.get(Calendar.DAY_OF_MONTH);
         cal.add(Calendar.DAY_OF_MONTH, - (today - 1)); //Back to first day of month
 
-        String num = ""; //Our day field
+        String num; //Our day field
         int day_offset = cal.get(Calendar.DAY_OF_WEEK) - 3;
         int day_of_week = 0;
         int days_in_month = cal.getActualMaximum(Calendar.DAY_OF_MONTH);
@@ -32,10 +31,7 @@ class ConsoleCalendar{
             else
                 num +="  ";
 
-
             calendar_matrix.add(num);
-            num = "";
-
 
             day_of_week++;
 
