@@ -2,6 +2,7 @@ package ru.digitalleague.factory.ok.notification;
 
 
 import ru.digitalleague.factory.ok.User;
+import ru.digitalleague.factory.ok.enums.NotificationTemplate;
 
 public class MailNotification implements Notification {
 
@@ -17,11 +18,12 @@ public class MailNotification implements Notification {
 
     public String getText() {
         return String.format(
-                "Address: %s\nУважаемый %s,\n%s%s\nС уважением, команда поддержки!",
+                NotificationTemplate.ADDRESS.getCode() + "%s\n" + NotificationTemplate.HEADER.getCode() +
+                        " %s,\n%s%s\n" + NotificationTemplate.ENDING.getCode(),
                 user.getEmail(),
                 user.getName(),
                 body,
-                hasAdvertisement ? "\n\nПокупайте наши товары!\n" : ""
+                hasAdvertisement ? "\n\n" + NotificationTemplate.AD.getCode() + "\n": ""
         );
     }
 }

@@ -1,11 +1,12 @@
 package ru.digitalleague.factory.bad;
 
 import ru.digitalleague.factory.ok.User;
+import ru.digitalleague.factory.ok.enums.Localize;
 
 public class Main {
 
     public static void main(String[] args) {
-        User user = new User(2L, "Денис", "denis@gmail.com", "+79522668105");
+        User user = new User(2L, "Денис", "denis@gmail.com", "+", Localize.RUSSIAN);
         String body = "Доброго дня!";
 
         if (false) {

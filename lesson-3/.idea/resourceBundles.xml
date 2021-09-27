@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ResourceBundleManager">
+    <custom-resource-bundle>
+      <file value="file://$PROJECT_DIR$/resources/Notification.properties" />
+      <file value="file://$PROJECT_DIR$/resources/Notification_en.properties" />
+      <base-name>Notification</base-name>
+    </custom-resource-bundle>
+    <custom-resource-bundle>
+      <file value="file://$PROJECT_DIR$/resources/Notification.properties" />
+      <file value="file://$PROJECT_DIR$/resources/Notification_en.properties" />
+      <base-name>Notification</base-name>
+    </custom-resource-bundle>
+  </component>
+</project>
