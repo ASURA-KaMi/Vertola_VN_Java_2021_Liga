@@ -1,9 +1,9 @@
 package com.bad.code2.shape;
 
 import com.bad.code2.base.Point;
-import com.bad.code2.base.Shape2D;
+import com.bad.code2.base.Shape;
 
-public class Square implements Shape2D {
+public class Square implements Shape {
     private Point leftCorner;
     private Double edgeSize;
 
@@ -23,8 +23,12 @@ public class Square implements Shape2D {
                                  leftCorner.getY()+halfEdge);
         return center;
     }
+    @Override
+    public Double getVolume(){
+        return null;
+    }
 
-
+    @Override
     public Double getPerimeter() {
         return edgeSize * edgeSize;
     }
