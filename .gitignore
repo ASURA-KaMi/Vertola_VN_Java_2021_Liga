@@ -1,2 +1,4 @@
-badCode2/bad-code/build
+/build
+/.gradle
+/gradle
 /out
