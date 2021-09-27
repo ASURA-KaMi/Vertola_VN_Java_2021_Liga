@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 /bad-code/build
 /bad-code/.gradle
 /bad-code/gradle
+=======
+/build
+/.gradle
+/gradle
+>>>>>>> 89b3e172924f37a88bba94dcf8b179776a559fef
 /out
