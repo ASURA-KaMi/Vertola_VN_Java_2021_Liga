@@ -2,6 +2,7 @@ plugins {
     id 'org.springframework.boot' version '2.5.5'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
+    id "org.flywaydb.flyway" version "7.15.0"
 }
 
 group = 'com.example'
@@ -31,8 +32,15 @@ dependencies {
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    compileOnly 'org.flywaydb:flyway-core:7.15.0'
 }
-
+flyway {
+    driver = 'org.postgresql.Driver'
+    url = 'jdbc:postgresql://localhost:5432/School'
+    user = 'Liga'
+    password = 'Liga'
+    locations = ['classpath:db/migration']
+}
 test {
     useJUnitPlatform()
 }
