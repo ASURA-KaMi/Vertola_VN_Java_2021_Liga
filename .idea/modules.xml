@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/swagger-demo.iml" filepath="$PROJECT_DIR$/.idea/modules/swagger-demo.iml" group="swagger-demo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/swagger-demo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/swagger-demo_main.iml" group="swagger-demo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/swagger-demo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/swagger-demo_test.iml" group="swagger-demo" />
+    </modules>
+  </component>
+</project>
