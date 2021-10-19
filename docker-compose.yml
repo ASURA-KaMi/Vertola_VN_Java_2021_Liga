@@ -1,0 +1,17 @@
+version: '3.3'
+
+services:
+
+  db:
+    image: postgres
+    container_name: postgres_container
+    restart: always
+    environment:
+      POSTGRES_USER: Liga
+      POSTGRES_PASSWORD: Liga
+      POSTGRES_DB: School
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./V1__init_schema.sql:docker-entrypoint-initdb.d/V1__init_schema.sql
+
