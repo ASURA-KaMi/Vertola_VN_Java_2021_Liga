@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+  postgres:
+    image: postgres
+    container_name: pcont
+    environment:
+      POSTGRES_DB: exam
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+    ports:
+      - "5432:5432"
